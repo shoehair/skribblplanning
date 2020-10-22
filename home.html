@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>GAME NAME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<style>
+.first {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: linear-gradient(navy, blue, white);
+    color: white;
+    text-align: center;
+    padding-top: 35vh;
+
+}
+
+.button {
+  background-color: navy; /* Green */
+  border: solid white 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+
+<body style = "font-family: 'Open Sans';">
+
+    <div class="first">
+        <div style="font-size: 72px;"> Skribbl.IEEE</div>
+        <div style="margin-top: 30px; margin-bottom: 40px; font-size: 40px;">A free multiplayer game for everyone</div>
+
+        <div class="row">
+          <div class="column" style="text-align: right;">  
+            <a href="#" class="button" style = "padding: 12px 30px;">Play</a>
+          </div>
+          <div class="column" style="text-align: left;">
+            <a href="#" class="button" style = "padding: 5px 30px 19px 30px;">Create Private Room</a>
+          </div>
+
+        </div>
+        
+    </div>
+
+</body>
+</html>
