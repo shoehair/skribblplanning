@@ -14,33 +14,12 @@ html {
   scroll-behavior: smooth;
 }
 
-.column1 {
-  float: left;
-  padding: 10px;
-}
-
-.side {
-  width: 25%;
-}
-
-.middle {
-  width: 50%;
-}
-
-.row1: after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .first {
-  width: 100vw;
   height: 100vh;
   min-height: 50%;    
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: hidden;
-  background-image: linear-gradient(navy, rgb(59, 59, 194), rgb(203, 220, 252));
   color: white;
   text-align: center;
   padding-top: 30vh;
@@ -48,7 +27,7 @@ html {
 
 #main {}
 
-#about{
+#aboutthegame{
   height: 60vh;
   min-height: 50%;    
   box-sizing: border-box;
@@ -99,41 +78,36 @@ html {
   transform: translateY(4px);
 }
 
-.topnav {
-  overflow: hidden;
-  background-color: navy;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
-
-
 
 .column {
   float: left;
   width: 50%;
 }
 
+
 .row:after {
   content: "";
   display: table;
   clear: both;
+
+}
+
+.column1 {
+  float: left;
+}
+
+.left, .right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 
 
@@ -143,46 +117,48 @@ html {
 
 </style>
 
-<body style = "font-family: 'Open Sans';" class = "custom" id = "main">
- 	<div class="topnav">
-	    <a href="#main">Main</a>
-	    <a href="#about">About</a>
-	    <a href="#howtoplay">How to Play</a>
-	    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Surprise!</a>
-	</div>
+<body style = "font-family: 'Open Sans'; margin: 0;" class = "custom" id = "main">
 
+ 
 
+  <div class="row" style = "background-color: #b3d9ff;">
+    <div class="column1 left" style="height: 100vh;"> </div>
 
-  <section class="first column1 middle">
-	  <div style="font-size: 72px;"> Skribbl.IEEE</div>
-	  <div style="margin-top: 30px; margin-bottom: 40px; font-size: 40px;">A free multiplayer game for everyone</div>
+    <div class="column1 middle" style="height: 100vh; background-color: yellow">
 
-    <div class="row">
-      <div class="column" style="text-align: right;">  
-        <a href="#" class="button" style = "padding: 12px 30px;">Play</a>
-      </div>
-      <div class="column" style="text-align: left;">
-        <a href="#" class="button" style = "padding: 5px 30px 19px 30px;">Create Private Room</a>
-      </div>
+      <section class="first">
+        <div style="font-size: 72px;"> Skribbl.IEEE</div>
+        <div style="margin-top: 30px; margin-bottom: 40px; font-size: 40px;">A free multiplayer game for everyone</div>
 
+        <div class="row">
+          <div class="column" style="text-align: right;">  
+            <a href="#" class="button" style = "padding: 12px 30px;">Play</a>
+          </div>
+          <div class="column" style="text-align: left;">
+            <a href="#" class="button" style = "padding: 5px 30px 19px 30px;">Create Private Room</a>
+          </div>
+
+        </div>
+      </section>
+
+      
+
+      <section id = "howtoplay">
+        <div style="font-size: 40px;"><b>How to Play</b></div>
+        <p>
+          Insert how to play the game
+        </p>
+      </section>
+
+      <section id = "aboutthegame">
+        <div style="font-size: 40px;"><b>About the Game</b></div>
+        <p>
+          Insert information about the game
+        </p>
+      </section>
     </div>
-	</section>
-
-	<section id = "about">
-	  <div style="font-size: 40px;"><b>About</b></div>
-	  <p>
-	    Insert information about the game
-	  </p>
-	</section>
-
-	<section id = "howtoplay">
-	  <div style="font-size: 40px;"><b>How to Play</b></div>
-	  <p>
-	    Insert how to play the game
-	  </p>
-	</section>
-
-
+    <div class="column1 right" style="height: 100vh;"></div>
+  </div>
 
 </body>
 </html>

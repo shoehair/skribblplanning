@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Woohoo playing page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+<style>
+html, body {
+    margin: 0;
+    height: 100vh;
+}
+.main-bg {
+    /* set background image
+    background-image: url('canvasbackground.jpg'); */
+    background-color: #F8E9A1;
+    height: 100vh;
+}
+.title {
+    padding-top: 10vh;
+    text-align: center;
+    color: #F76C6C;
+    font-weight: 800;
+    font-size: 32px;
+}
+.description {
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    color: #123C69;
+}
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 100px;
+    height: 60px;
+    border-radius: 30px;
+    border: 3px solid #24305E;
+    background-color: #374785;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+.buttons {
+    text-align: center; 
+    margin-top: 40px; 
+    color: #ac3b61;
+}
+.create, .howto {
+    background-color: #A8D0E6;
+}
+.meta {
+    position: fixed;
+    bottom: 10px;
+    left: 35%; right: 35%;
+    text-align: center;
+    font-size: 10px;
+}
+.columnS {
+  float: left;
+  width: 25%;
+  border: 1px solid #A8D0E6;
+
+}
+.columnC {
+  float: left;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 900px) {
+  .columnS {
+    display: none;
+  }
+  .columnC {
+    width: 100%;
+  }
+}
+</style>
+<body>
+
+    <!-- main background -->
+    <div class="main-bg">
+
+        <div class="row">
+            <div class="columnS" style="height: 100px;"></div>
+            <div class="columnC">
+                <div class="title">
+                    Playing page
+                </div>
+        
+                <div class="description">
+                    Insert clever description here
+                </div>
+        
+            
+
+                <div class="meta">
+                    metadata or logos
+                </div>
+            </div>
+            <div class="columnS" style="height: 100px;"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
