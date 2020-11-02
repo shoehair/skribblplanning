@@ -3,27 +3,32 @@
   background-color: #B2D6FF;    /* Medium blue */
 }
 
-.sidebar {
+.canvas {
   float: left;                  /* Add this */
-  width: 200px;
-  height: 300px;
+  width: 650px;
+  height: 600px;
   background-color: #F09A9D;
 }
 
-.content {
+.chat {
   float: left;                  /* Add this */
-  width: 650px;
-  height: 500px;
+  width: 250px;
+  height: 600px;
   background-color: #F5CF8E;
 }
+
 .footer {
   clear: both;            /* Add this */
-  height: 200px;
+  height: 100px;
   background-color: #D6E9FE;
 }
 
 .page {
   width: 900px;
   margin: 0 auto;
-  border: 1px solid red;  /* Add this */
+}
+
+.container {
+  overflow: hidden;
+  background-color: #EAEDF0;
 }
