@@ -12,6 +12,7 @@
 	--light-yellow: #ffe682;
 	--dark-yellow: #f9d751;
 	--dark-blue: #374785;
+	--grey: #c9c9c9;
 }
 
 * {
@@ -54,11 +55,11 @@ a {
  	width: 8vw;
     height: 8%;
     border-radius: 30px;
-    border: 3px solid #24305E;
+    border: 3px solid var(--dark-blue);
     font-size: 1.5vw;
     text-align: center;
-    color: white;
-    box-shadow: 0 9px var(--dark-blue);
+    color: var(--classic-color);
+    box-shadow: 0 9px var(--classic-color);
     padding: 5px 15px;
     background: var(--dark-yellow);
 
@@ -77,36 +78,51 @@ Settings Box
 
 .settings-container {
 	float: left;  
-	width: 37.5vw;
-	height: 80vh;
+	width: 35vw;
+	height: 70vh;
 	max-height: 1000px;
 	background-color: var(--pink-light);
-	margin-top: 10vh;
+	margin-top: 15vh;
 	margin-left: 10vw;
 	overflow: hidden;
 	padding: 30px 15px;
 	text-align: center;
 	font-size: 20px;
-	color:white;
+	color:var(--classic-color);
 	font-family: 'Noto Sans JP', sans-serif;
+	border-radius: 60px;
+	border: 10px solid var(--pink-dark);
 }
 
 .setting {
     margin-top: 20px;
 }
 
+select {
+    height:30px;
+    font-size: 20px;
+    border: 3px solid var(--pink-dark);
+    background: var(--grey);
+
+}
+
+
 /* Players Box */
 .players-container {
 	background-color: var(--dark-blue);
 	float: left;  
-	width: 37.5vw;
-	height: 80vh;
+	width: 35vw;
+	height: 70vh;
 	max-height: 1000px;
-	margin-top: 10vh;
-	margin-left:5vw;
+	margin-top: 15vh;
+	margin-left:10vw;
 	overflow: hidden;
 	padding: 30px 15px;
 	text-align: center;
+	border-radius: 60px;
+	border: 10px solid var(--dark-yellow);
+
+
 }
 
 .column {
@@ -121,16 +137,10 @@ Settings Box
 	width: 100%;
 	margin-top: 25%;
 	height: 20%;
-	background-color: white;
+	background-color: #c9c9c9;
 }
 
   
-select {
-    height:30px;
-    font-size: 20px;
-    border: 3px solid var(--pink-dark);
-
-}
 
 
 
